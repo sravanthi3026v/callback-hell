@@ -1,0 +1,28 @@
+Date:17/01/22
+Sychronous and Asynchronous programming
+callback
+What is callback function?
+A callback function is a function passed into another function as an argument.You will callfunction inside and other function to complete the actionWhy we need callback function?Basically ,js is an event driven langauge.Instead of waiting for a response,javascript keep on executing the event while listen to the other event or process after thatcallback are way to make sure that certain code doesn't execute until other code get finished its execution.
+What is callback hell?
+call stack,message queue ,event looping and DOM(Web apis ,setTimeout ,setInterval)
+
+create 2 function1.makeUpperCase()2.reverseString()These 2 function should be passed an argument as callback function3.Create a3rd function handleName(name,callback)and display the output
+
+PromisesAsync and await
+
+const convert = (str,callback) => callback(str);const upperCase = (str) => str.toUpperCase();const reverse = (str) => str.split('').reverse().join('');console.log(convert('gita',upperCase));console.log(convert('gita',reverse));
+
+function makeUpperCase(value) {console.log(value.toUpperCase());}function reverseString(value) {console.log(value.split("").reverse().join(""));}function handleName(name, callback) {callback(name);}handleName("john", reverseString);
+
+create a function with name myfun()
+1.contain seTimeout with delay in time 3000 ms
+2.an array of itemsdata=5 fruits
+2.create another function with name callbackwhich should execute the error if not data is there elseit should print the dataUse callback function approach to design same
+
+https://github.com/lavishjain36/callbackhell-Pizza
+
+https://docs.google.com/document/d/1K6jW6TPmqWvzoRAm2t-GlOAxKmMRsLt5zaCsdcH_3LM/edit
+
+https://docs.google.com/document/d/1K6jW6TPmqWvzoRAm2t-GlOAxKmMRsLt5zaCsdcH_3LM/edit
+
+
